@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AD93E9"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_day"
+        android:layout_width="149dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="268dp"
+        android:backgroundTint="#E4B44C"
+        android:text="Day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_morning"
+        android:layout_width="149dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="192dp"
+        android:backgroundTint="#DCD965"
+        android:text="Morning"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_evening"
+        android:layout_width="149dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="340dp"
+        android:backgroundTint="#E4714C"
+        android:text="Evening"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_night"
+        android:layout_width="149dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="416dp"
+        android:backgroundTint="#8961CE"
+        android:text="Night"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="16dp"
+        android:text="Пестерев Данил Т-423901-НТ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
