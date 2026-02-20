@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Кулинарный помощник</string>
+    <string name="language">Язык</string>
+    <string name="recipes">Рецепты</string>
+    <string name="breakfast">Завтрак</string>
+    <string name="lunch">Обед</string>
+    <string name="dinner">Ужин</string>
+    <string name="all">Все</string>
+    <string name="ingredients">Ингредиенты</string>
+    <string name="steps">Шаги</string>
+</resources>

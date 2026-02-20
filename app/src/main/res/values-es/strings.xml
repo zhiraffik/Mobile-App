@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Asistente de cocina</string>
+    <string name="language">Idioma</string>
+    <string name="recipes">Recetas</string>
+    <string name="breakfast">Desayuno</string>
+    <string name="lunch">Almuerzo</string>
+    <string name="dinner">Cena</string>
+    <string name="all">Todas</string>
+    <string name="ingredients">Ingredientes</string>
+    <string name="steps">Pasos</string>
+</resources>
