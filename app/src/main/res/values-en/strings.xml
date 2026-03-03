@@ -8,4 +8,17 @@
     <string name="all">All</string>
     <string name="ingredients">Ingredients</string>
     <string name="steps">Steps</string>
+    <string name="timers">Timers</string>
+    <string name="timer_bake">Bake (editable)</string>
+    <string name="timer_dough_rest">Dough rest</string>
+    <string name="timer_sauce">Sauce simmer</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="reset">Reset</string>
+    <string name="set">Set</string>
+    <string name="min_short">min</string>
+    <string name="sec_short">sec</string>
+    <string name="timer_kfc_legs">Chicken legs</string>
+    <string name="timer_kfc_wings">Wings / Thighs</string>
+    <string name="timer_kfc_fillet">Fillet</string>
 </resources>

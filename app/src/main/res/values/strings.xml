@@ -8,4 +8,17 @@
     <string name="all">Все</string>
     <string name="ingredients">Ингредиенты</string>
     <string name="steps">Шаги</string>
+    <string name="timers">Таймеры</string>
+    <string name="timer_bake" translatable="false">Выпекание (ред.)</string>
+    <string name="timer_dough_rest">Расстойка теста</string>
+    <string name="timer_sauce">Соус (томление)</string>
+    <string name="start">Старт</string>
+    <string name="pause">Пауза</string>
+    <string name="reset">Сброс</string>
+    <string name="set">Задать</string>
+    <string name="min_short">мин</string>
+    <string name="sec_short">сек</string>
+    <string name="timer_kfc_legs">Ножки</string>
+    <string name="timer_kfc_wings">Крылья / Бёдра</string>
+    <string name="timer_kfc_fillet">Филе</string>
 </resources>

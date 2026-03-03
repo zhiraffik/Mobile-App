@@ -1,5 +1,7 @@
 package com.example.lr9.data;
 
+import com.example.lr9.R;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -9,7 +11,7 @@ public class RecipeRepository {
     public static List<Recipe> getAll() {
         List<Recipe> list = new ArrayList<>();
 
-        // Завтрак (Italian)
+        // Завтрак — Омлет (Italian)
         list.add(new Recipe(
                 "br_omelette",
                 Recipe.MealType.BREAKFAST,
@@ -37,10 +39,12 @@ public class RecipeRepository {
                         "Corta el tomate, ralla el queso.",
                         "Vierte los huevos en la sartén y añade el relleno.",
                         "Cocina 3–5 min hasta que cuaje."
-                )
+                ),
+                null, null, null,
+                null
         ));
 
-        // Обед (Japanese)
+        // Обед — Мисо-суп (Japanese)
         list.add(new Recipe(
                 "lu_miso",
                 Recipe.MealType.LUNCH,
@@ -68,10 +72,12 @@ public class RecipeRepository {
                         "Disuelve el miso en un poco de agua y agrégalo.",
                         "Añade tofu en cubos y calienta 2 min (sin hervir).",
                         "Sirve con cebolleta."
-                )
+                ),
+                null, null, null,
+                null
         ));
 
-        // Ужин (Russian)
+        // Ужин — Гречка (Russian)
         list.add(new Recipe(
                 "di_buckwheat",
                 Recipe.MealType.DINNER,
@@ -99,10 +105,12 @@ public class RecipeRepository {
                         "Sofríe cebolla y zanahoria 3–4 min.",
                         "Añade el pollo y cocina hasta listo.",
                         "Mezcla con el trigo sarraceno y sazona."
-                )
+                ),
+                null, null, null,
+                null
         ));
 
-        // Ужин/Обед (American) — Курица KFC
+        // Ужин — Курица KFC (American)
         list.add(new Recipe(
                 "di_kfc",
                 Recipe.MealType.DINNER,
@@ -138,29 +146,31 @@ public class RecipeRepository {
                         "Huevos (3–6)"
                 ),
                 Arrays.asList(
-                        "Разделайте курицу и замаринуйте. Пример маринада: 1 ст. л. соли + 2 ст. л. сахара на воду.",
-                        "Сделайте панировку: 300 г муки + 90 г кукурузного крахмала + 1 ст. л. разрыхлителя + специи.",
-                        "Сделайте яичную смесь: 3–6 яиц на 1–1.5 л воды, перемешайте.",
-                        "Обваляйте курицу в панировке, затем окуните в яичную смесь (выпустите пузырьки), снова в панировку и сразу во фритюр.",
-                        "Время: ноги 12–15 мин; крылья 7–8 мин; филе 5–6 мин. После — на бумажные полотенца."
+                        "Разделать курицу и замариновать (маринад любой). Вариант: 1 ст. л. соли + 2 ст. л. сахара + вода.",
+                        "Панировка: 300 г муки + 90 г кукурузного крахмала + 1 ст. л. разрыхлителя + специи.",
+                        "Яичная смесь: 3–6 яиц на 1–1.5 л воды, перемешать.",
+                        "Курицу: панировка → яичная смесь (выпустить пузырьки) → панировка → сразу во фритюр.",
+                        "Время: ноги 12–15 мин, крылья 7–8 мин, филе 5–6 мин. После — на бумажное полотенце."
                 ),
                 Arrays.asList(
                         "Cut chicken and marinate. Example: 1 tbsp salt + 2 tbsp sugar in water.",
                         "Breading: 300 g flour + 90 g corn starch + 1 tbsp baking powder + spices.",
                         "Egg mix: 3–6 eggs per 1–1.5 L water, whisk.",
-                        "Coat in breading, dip into egg mix (let bubbles escape), coat again and fry immediately.",
+                        "Chicken: breading → egg mix (let bubbles escape) → breading → fry immediately.",
                         "Time: legs 12–15 min; wings 7–8 min; fillet 5–6 min. Drain on paper towels."
                 ),
                 Arrays.asList(
                         "Corta el pollo y marínalo. Ejemplo: 1 cda sal + 2 cdas azúcar en agua.",
                         "Empanado: 300 g harina + 90 g almidón de maíz + 1 cda polvo de hornear + especias.",
                         "Mezcla de huevo: 3–6 huevos por 1–1.5 L de agua, bate.",
-                        "Reboza, pasa por la mezcla de huevo (que salgan las burbujas), reboza otra vez y fríe enseguida.",
+                        "Pollo: rebozado → huevo (que salgan burbujas) → rebozado → freír.",
                         "Tiempo: muslos 12–15 min; alas 7–8 min; pechuga 5–6 min. Escurre en papel."
-                )
+                ),
+                null, null, null,
+                null
         ));
 
-// Ужин (Italian) — Пицца
+        // Ужин — Пицца (Italian) + озвучка ru/en/es + видео
         list.add(new Recipe(
                 "di_pizza",
                 Recipe.MealType.DINNER,
@@ -174,11 +184,11 @@ public class RecipeRepository {
                         "Дрожжи сухие — 5 г",
                         "Сахар — 10 г",
                         "Соль — 10 г",
-                        "Масло оливковое/растительное — 30 г (+ 10 г растительного по желанию)",
+                        "Масло оливковое/растительное — 30 г",
                         "Протёртые томаты — 300 г",
                         "Вода для соуса — ~50 г",
                         "Итальянские травы, чеснок, перец, соль — по вкусу",
-                        "Сыр (лучше смесь: твёрдый + моцарелла)",
+                        "Сыр (твёрдый + моцарелла)",
                         "Топпинги — по вкусу"
                 ),
                 Arrays.asList(
@@ -187,11 +197,11 @@ public class RecipeRepository {
                         "Dry yeast — 5 g",
                         "Sugar — 10 g",
                         "Salt — 10 g",
-                        "Olive/vegetable oil — 30 g (+ 10 g optional)",
+                        "Olive/vegetable oil — 30 g",
                         "Crushed tomatoes — 300 g",
                         "Water for sauce — ~50 g",
                         "Italian herbs, garlic, pepper, salt — to taste",
-                        "Cheese (mix: hard + mozzarella)",
+                        "Cheese (hard + mozzarella)",
                         "Toppings — to taste"
                 ),
                 Arrays.asList(
@@ -200,38 +210,41 @@ public class RecipeRepository {
                         "Levadura seca — 5 g",
                         "Azúcar — 10 g",
                         "Sal — 10 g",
-                        "Aceite de oliva/vegetal — 30 g (+ 10 g opcional)",
+                        "Aceite de oliva/vegetal — 30 g",
                         "Tomate triturado — 300 g",
                         "Agua para salsa — ~50 g",
                         "Hierbas italianas, ajo, pimienta, sal — al gusto",
-                        "Queso (mezcla: curado + mozzarella)",
+                        "Queso (curado + mozzarella)",
                         "Toppings — al gusto"
                 ),
                 Arrays.asList(
-                        "Тесто: смешайте воду (часть оставьте 30–50 мл), дрожжи и сахар. Добавьте муку, замесите. Затем добавьте оставшуюся воду, соль и масло, вымешайте.",
-                        "Оставьте тесто на 40–70 минут при комнатной температуре (ёмкость смазать маслом).",
-                        "Разделите на порции ~350 г, сформируйте шарики, уберите в холодильник на 12–24 часа.",
+                        "Тесто: смешайте воду (часть оставьте 30–50 мл), дрожжи и сахар. Добавьте муку, замесите.",
+                        "Добавьте оставшуюся воду, соль и масло, вымешайте.",
+                        "Оставьте на 40–70 минут при комнатной температуре.",
+                        "Разделите на порции ~350 г и уберите на 12–24 часа в холодильник.",
                         "Соус: обжарьте чеснок в масле, добавьте томаты и воду, специи и соль, немного проварите.",
-                        "Пицца: достаньте тесто за 1–1.5 часа. Растягивайте руками (можно на манке). Добавьте соус, сыр, топпинги.",
-                        "Разогрейте духовку 275–300°C с противнем внутри. Выпекайте 7–10 минут на горячем противне."
+                        "Соберите пиццу и выпекайте 7–10 минут при 275–300°C на горячем противне."
                 ),
                 Arrays.asList(
-                        "Dough: mix water (keep 30–50 ml), yeast and sugar. Add flour and knead. Add remaining water, salt and oil, knead well.",
-                        "Rest 40–70 min at room temperature (oiled container).",
-                        "Divide into ~350 g balls, refrigerate 12–24 hours.",
-                        "Sauce: sauté garlic in oil, add tomatoes + water, herbs/pepper/salt, simmer a bit.",
-                        "Pizza: take dough out 1–1.5 h before. Stretch by hand (semolina optional). Add sauce, cheese, toppings.",
-                        "Bake at 275–300°C on a preheated tray for ~7–10 min."
+                        "Dough: mix water (keep 30–50 ml), yeast and sugar. Add flour and knead.",
+                        "Add remaining water, salt and oil, knead well.",
+                        "Rest 40–70 minutes at room temperature.",
+                        "Divide into ~350 g balls and refrigerate 12–24 hours.",
+                        "Sauce: sauté garlic in oil, add tomatoes + water, season, simmer a bit.",
+                        "Assemble and bake 7–10 min at 275–300°C on a preheated tray."
                 ),
                 Arrays.asList(
-                        "Masa: mezcla agua (reserva 30–50 ml), levadura y azúcar. Añade harina y amasa. Luego añade el agua restante, sal y aceite y amasa bien.",
-                        "Deja reposar 40–70 min a temperatura ambiente (recipiente con aceite).",
+                        "Masa: mezcla agua (reserva 30–50 ml), levadura y azúcar. Añade harina y amasa.",
+                        "Añade el agua restante, sal y aceite; amasa bien.",
+                        "Deja reposar 40–70 min a temperatura ambiente.",
                         "Divide en bolas de ~350 g y refrigera 12–24 h.",
-                        "Salsa: sofríe ajo en aceite, añade tomate + agua, hierbas/pimienta/sal, cocina un poco.",
-                        "Pizza: saca la masa 1–1.5 h antes. Estira con las manos (sémola opcional). Añade salsa, queso y toppings.",
-                        "Hornea a 275–300°C en bandeja precalentada ~7–10 min."
-                )
+                        "Salsa: sofríe ajo en aceite, añade tomate + agua, sazona y cocina un poco.",
+                        "Monta y hornea 7–10 min a 275–300°C en bandeja precalentada."
+                ),
+                R.raw.pizza_ru, R.raw.pizza_en, R.raw.pizza_es,
+                R.raw.pizza_video
         ));
+
         return list;
     }
 }
