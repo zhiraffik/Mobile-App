@@ -8,4 +8,17 @@
     <string name="all">Todas</string>
     <string name="ingredients">Ingredientes</string>
     <string name="steps">Pasos</string>
+    <string name="timers">Temporizadores</string>
+    <string name="timer_bake">Horneado (editable)</string>
+    <string name="timer_dough_rest">Reposo de masa</string>
+    <string name="timer_sauce">Salsa (cocer)</string>
+    <string name="start">Iniciar</string>
+    <string name="pause">Pausa</string>
+    <string name="reset">Reiniciar</string>
+    <string name="set">Aplicar</string>
+    <string name="min_short">min</string>
+    <string name="sec_short">seg</string>
+    <string name="timer_kfc_legs">Muslos</string>
+    <string name="timer_kfc_wings">Alas / Muslos</string>
+    <string name="timer_kfc_fillet">Filete</string>
 </resources>
