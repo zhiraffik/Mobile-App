@@ -14,10 +14,12 @@ import com.example.lr9.adapter.RecipeAdapter;
 import com.example.lr9.data.Recipe;
 import com.example.lr9.data.RecipeRepository;
 import com.example.lr9.util.LocaleHelper;
+import com.example.lr9.util.SoundPlayer;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        if (savedInstanceState == null) {
+            SoundPlayer.playShort(this, R.raw.start_app);
+        }
         spLang = findViewById(R.id.spLang);
         spMeal = findViewById(R.id.spMeal);
         spCuisine = findViewById(R.id.spCuisine);
@@ -55,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         rv.setLayoutManager(new LinearLayoutManager(this));
         adapter = new RecipeAdapter(new ArrayList<>(), currentLang, recipe -> {
+            SoundPlayer.playShort(MainActivity.this,R.raw.open_recipe);
             Intent i = new Intent(MainActivity.this, DetailActivity.class);
             i.putExtra("recipe", recipe);
             i.putExtra("lang", currentLang);
